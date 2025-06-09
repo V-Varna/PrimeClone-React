@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# 🎬 PrimeClone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **Prime Video-inspired streaming app clone** built using **React.js**, featuring a clean UI, dynamic movie data from TMDB, search, genre filters, and a custom watchlist.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Live Demo
 
-### `npm start`
+> ![Image](https://github.com/user-attachments/assets/3b6bcc1a-4d9b-413e-94f4-438e76ad5db8)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📽️ Overview
 
-### `npm test`
+**PrimeClone** replicates key features of popular video streaming platforms like Amazon Prime Video. It fetches real-time movie and TV show data from the **TMDB API**, allowing users to explore content by category, genre, or search — all within a smooth, responsive UI built in React.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🌟 Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🎞️ **Home Page** with categorized scrollable movie rows
+- 🔍 **Search functionality** with real-time results
+- 📺 **Browse by Genre** (Action, Comedy, Drama, etc.)
+- 📄 **Movie Details Page** with title, overview, and poster
+- ❤️ **My List** page using React Context API (watchlist)
+- 📱 Responsive layout for mobile and desktop
+- 🧭 Sticky navigation bar with icons
+- ⚡ Smooth transitions and hover effects
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧰 Tech Stack
 
-### `npm run eject`
+| Layer         | Technology                       |
+|---------------|----------------------------------|
+| **Frontend**  | React.js, Tailwind CSS           |
+| **Routing**   | React Router DOM                 |
+| **Icons**     | React Icons                      |
+| **Data/API**  | Axios + [TMDB API](https://www.themoviedb.org/documentation/api) |
+| **State Mgmt**| React Context API                |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Installation & Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/yourusername/primeclone.git
+   cd primeclone
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2.**Install dependencies**
 
-## Learn More
+   npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3.**Add your TMDB API key**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  *In src/axios.js or as an environment variable:*
 
-### Code Splitting
+   const instance = axios.create({
+     baseURL: "https://api.themoviedb.org/3",
+      params: {
+        api_key: "YOUR_TMDB_API_KEY",
+      },
+   });
+4.**Run the app**
+    npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📝 License
+This project is open-source and free to use under the MIT License.
 
-### Analyzing the Bundle Size
+🙌 Acknowledgements
+TMDB — for the open movie API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Tailwind CSS
 
-### Making a Progressive Web App
+React Icons
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Built with ❤️ by Varna
+---
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
