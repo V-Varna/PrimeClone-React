@@ -1,0 +1,13 @@
+/* keep your existing no-scrollbar util */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* NEW – scrolling container with Y-overflow visible */
+.row-scroll {
+  display: flex;
+  gap: 1.25rem;          /* 5 (tailwind gap-5) */
+  overflow-x: auto;
+  overflow-y: visible;   /* ⬅️ allow expanded cards to spill vertically */
+  padding: 0 2rem;       /* 8 (tailwind px-8) */
+  scroll-behavior: smooth;
+}
