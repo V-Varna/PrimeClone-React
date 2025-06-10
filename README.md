@@ -7,6 +7,7 @@ A **Prime Video-inspired streaming app clone** built using **React.js**, featuri
 ## 🚀 Live Demo
 
 > ![Image](https://github.com/user-attachments/assets/3b6bcc1a-4d9b-413e-94f4-438e76ad5db8)
+> https://prime-clone-react-git-master-varnas-projects-4f51fd6b.vercel.app
 
 ---
 
